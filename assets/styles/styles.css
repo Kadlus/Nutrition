@@ -1,0 +1,49 @@
+:root {
+    --primary: #cfb02c;
+    --secondory: #c5c5c5;
+    --white: #ffffff;
+    --black: #000000;
+}
+
+.main-menu {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    width: 25%;
+}
+
+.logo img {
+    width: 250px;
+    height: auto;
+}
+
+.menu-links {
+    display: flex;
+    list-style: none;
+    gap: 24px;
+    font-size: 20px;
+    padding: 0;
+}
+
+.customer-section {
+    display: flex;
+    width: 25%;
+    gap: 24px;
+    align-items: center;
+}
+
+.customer-section .fa {
+    font-size: 20px;
+}
+
+.btn {
+    border-radius: 24px;
+    background-color: var(--primary);
+    border: none;
+    padding: 14px;
+    text-transform: uppercase;
+}
