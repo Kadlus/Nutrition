@@ -7,6 +7,7 @@
     --grey: #758d87;
     --darkgrey: #333333;
     --black: #000000;
+    --page-width: 2048px;
 }
 
 * {
@@ -15,6 +16,8 @@
 
 body {
     font-family: 'Open Sans', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 h1 {
@@ -39,15 +42,19 @@ h4 {
     text-wrap: nowrap;
 }
 
+.welcome-container p {
+    padding: 24px;
+}
 
 .page-container {
-    max-width: 1200px;
+    max-width: var(--page-width);
     margin: auto;
 }
 
 .main-menu {
     padding: 24px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     max-width: 1600px;
@@ -90,6 +97,10 @@ h4 {
 .customer-section .fa:hover {
     color: var(--primary);
     cursor: pointer;
+}
+
+.btn-appointment {
+    color: var(--white);
 }
 
 .btn {
@@ -207,19 +218,21 @@ h4 {
     padding: 42px;
 }
 
-input {
+.sub-form-mail, .sub-form-btn {
     padding: 14px 24px;
     border-radius: 24px;
     margin-bottom: 16px;
+    border: none;
+    outline: none;
 }
 
-input[type='button'] {
+.sub-form-btn {
     background-color: var(--primary);
     border: none;
     color: var(--white);
 }
 
-input[type='button']:hover {
+.sub-form-btn:hover {
     background-color: var(--grey);
     cursor: pointer;
 }
@@ -295,10 +308,20 @@ footer {
 .sub-btn, .sub-mail {
     width: 100%;
     margin-bottom: 12px;
+    padding: 12px;
+    border-radius: 24px;
+    outline: none;
 }
 
 .sub-btn {
     text-transform: uppercase;
+    background: var(--primary);
+    border: none;
+}
+
+.sub-btn:hover {
+    cursor: pointer;
+    background: var(--grey);
 }
 
 @media only screen and (max-width: 768px) {
@@ -331,6 +354,7 @@ footer {
     input[type='button'] {
         width: 100%;
     }
+
 }
 
 @media only screen and (max-width: 992px) {
