@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="assets/styles/styles.css" />
+    <link rel="stylesheet" href="assets/styles/styles.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Nutrition</title>
 </head>
 <body>
+<div class="page-container">
+
+</div>
 <header>
     <nav>
         <div class="main-menu">
@@ -22,12 +25,196 @@
                     <li>Contact</li>
                 </ul>
             </div>
-            <div class="customer-section">
+            <div class="customer-section" id="shopping-cart">
                 <i class="fa fa-shopping-cart"></i>
                 <button class="btn btn-appointment">book an appointment</button>
             </div>
         </div>
     </nav>
+    <div class="welcome-container">
+        <h1>Shop</h1>
+        <p>Sample text. Click to select the Text Element. Sollicitudin duis erat nisi porttitor litora massa.</p>
+    </div>
 </header>
+<main>
+    <div class="main-container">
+        <div class="select-box">
+            <label>
+                <select>
+                    <option value="all">All</option>
+                    <option value="featured">Featured</option>
+                    <option value="accesoires">Accsories</option>
+                </select>
+            </label>
+        </div>
+        <div class="product-items">
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/images/healty-breakfast.jpg" alt="Healthy Breakfast">
+                </div>
+                <div class="product-text">
+                    <h3>Healty Breakfast</h3>
+                    <span class="price">$18.00</span>
+                </div>
+                <div class="product-button">
+                    <button>add to cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/images/weight-loss.jpg" alt="Healthy Breakfast">
+                </div>
+                <div class="product-text">
+                    <h3>Weight Loss</h3>
+                    <span class="discount">$44.00</span>
+                    <span class="price">$29.00</span>
+                </div>
+                <div class="product-button">
+                    <button>add to cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/images/grilled-recipes.jpg" alt="Healthy Breakfast">
+                </div>
+                <div class="product-text">
+                    <h3>Grilled Vegetables</h3>
+                    <span class="discount">$22.00</span>
+                    <span class="price">$15.00</span>
+                </div>
+                <div class="product-button">
+                    <button>add to cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/images/fruit-mix.jpg" alt="Fruit Mix">
+                </div>
+                <div class="product-text">
+                    <h3>Fruit Mix</h3>
+                    <span class="discount">$300.00</span>
+                    <span class="price">$245.00</span>
+                </div>
+                <div class="product-button">
+                    <button>add to cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/images/nutrition-book.png" alt="The Nutrition Book">
+                </div>
+                <div class="product-text">
+                    <h3>The Nutrition Book</h3>
+                    <span class="discount">$25.00</span>
+                    <span class="price">$19.00</span>
+                </div>
+                <div class="product-button">
+                    <button>add to cart</button>
+                </div>
+            </div>
+            <div class="product-item">
+                <div class="product-image">
+                    <img src="assets/images/protein-shakes.jpg" alt="Protein Shakes">
+                </div>
+                <div class="product-text">
+                    <h3>Protein Shakes</h3>
+                    <span class="discount">$20.00</span>
+                    <span class="price">17.00</span>
+                </div>
+                <div class="product-button">
+                    <button>add to cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section>
+        <div class="light-background">
+            <div class="subscribe-container">
+                <div class="left-side">
+                    <img src="assets/images/book-new-2-min.png" alt="Cook Book">
+                </div>
+                <div class="right-side">
+                    <h2>Get Free eBook!</h2>
+                    <p>
+                        Do you want to have sustained energy, freedom from hunger and cravings and reduce your risk of
+                        illness? Get my FREE eBook here.
+                    </p>
+                    <div class="sub-form">
+                        <form>
+                            <label>
+                                <input type="email" placeholder="Email">
+                            </label>
+                            <input type="button" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
+<footer>
+    <div class="main-footer">
+        <div class="social-media">
+            <img src="assets/images/light-nutrition-logo-image.png" alt="Nutrition logo">
+            <div class="social-icons">
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
+            </div>
+        </div>
+        <div class="quick-links-footer">
+            <h4>Quick Links</h4>
+            <ul class="quick-links">
+                <li>
+                    <a href="">About Me</a>
+                </li>
+                <li>
+                    <a href="">Consultation</a>
+                </li>
+                <li>
+                    <a href="">My Blog</a>
+                </li>
+                <li>
+                    <a href="">Books</a>
+                </li>
+            </ul>
+        </div>
+        <div class="our-services-footer">
+            <h4>Our Services</h4>
+            <ul class="quick-links">
+                <li>
+                    <a href="">Support & Motivation</a>
+                </li>
+                <li>
+                    <a href="">Weight Loss Programs</a>
+                </li>
+                <li>
+                    <a href="">Personalized Nutrition</a>
+                </li>
+                <li>
+                    <a href="">Healthy Daily Life</a>
+                </li>
+                <li>
+                    <a href="">Balance Body & Mind</a>
+                </li>
+            </ul>
+        </div>
+        <div class="newsletter">
+            <h4>Newsletter</h4>
+            <div class="newsletter-form">
+                <form>
+                    <label for="email">
+                        <input class="sub-mail" type="email" id="email" placeholder="Email" required>
+                    </label>
+                    <input class="sub-btn" type="button" value="submit">
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>Michal Kmiť - 2025</p>
+        <p>This site was created with the <a href="https://www.nicepage.com" target="_blank">Nicepage</a></p>
+    </div>
+</footer>
 </body>
 </html>
